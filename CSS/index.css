@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0.5rem 1rem; /* REDUCIDO */
     border-style: double;
     border-width: 2px;
-    border-color: rgb(60, 255, 255);
+    border-color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
@@ -65,17 +65,17 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.2em; /* REDUCIDO */
     font-weight: 400;
     font-style: normal;
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 /* BOTÓN MENU */
 #menubtn {
-    color: aqua;
+    color: rgb(255, 255, 255);
     background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
     border-radius: 10px;
     border-width: 2px; /* REDUCIDO */
     border-style: double;
-    border-color: aqua;
+    border-color: rgb(255, 255, 255);
     font-size: 1.8em; /* REDUCIDO */
     padding: 0.4em 0.6em; /* REDUCIDO */
     z-index: 1001;
