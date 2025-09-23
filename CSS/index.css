@@ -1,0 +1,237 @@
+/* HEADER GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1d1d1d;
+    overflow-x: hidden;
+    padding-top: 1%;
+    overflow-y: auto;
+    background-color: black;
+    background-color: radial-gradient(circle, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0) 70%);
+
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
+    padding: 0.5rem 1rem; /* REDUCIDO */
+    border-style: double;
+    border-width: 2px;
+    border-color: rgb(60, 255, 255);
+    border-radius: 15px;
+}
+
+/* LOGO */
+#mainlogo {
+    width: 9em; /* REDUCIDO */
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* TITULO */
+#logotit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#estelar {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 2.2em; /* REDUCIDO */
+    font-weight: 400;
+    font-style: normal;
+    color: aqua;
+}
+
+/* BOTÓN MENU */
+#menubtn {
+    color: aqua;
+    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
+    border-radius: 10px;
+    border-width: 2px; /* REDUCIDO */
+    border-style: double;
+    border-color: aqua;
+    font-size: 1.8em; /* REDUCIDO */
+    padding: 0.4em 0.6em; /* REDUCIDO */
+    z-index: 1001;
+    cursor: pointer;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+#menubtn:hover {
+    color: rgb(101, 255, 255);
+    background: linear-gradient(170deg, rgba(0, 255, 255, 0.226) 0%, rgba(0, 255, 255, 0.164));
+    border-color: rgb(101, 255, 255);
+    border-style: double;
+    transition: 0.5s;
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+
+
+}
+
+
+#menubtn:hover::before {
+    transform: scaleX(1);
+}
+
+
+#menubtn.active {
+    color: rgb(101, 255, 255);
+    transform: rotate(180deg);
+    border-color: rgb(60, 255, 255);
+
+}
+
+/* MENU LATERAL */
+#navmenu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* REDUCIDO */
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(0, 22, 22), #111111);
+    padding-top: 80px;
+    transition: 0.5s;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#navmenu.active {
+    right: 0;
+}
+
+#navmenu ul {
+    list-style: none;
+}
+
+#navmenu ul li {
+    margin: 20px 0;
+    padding: 0 30px;
+}
+
+#navmenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 150%; /* REDUCIDO */
+    font-weight: lighter;
+    font-family: "Chakra Petch", sans-serif;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 0;
+    display: block;
+}
+
+#navmenu ul li a:hover {
+    color: rgb(101, 255, 255);
+}
+
+#navmenu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, aqua, rgb(101, 255, 255));
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+#navmenu ul li a:hover::after {
+    width: 100%;
+}
+
+/* TEXTO DE NAVEGACIÓN */
+#lil {
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    font-size: 180%; /* REDUCIDO */
+    font-weight: 150;
+}
+
+/* LINKS GENERALES */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ffcc00;
+    transition: all 0.6s;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9500, #ffcc00);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+    #estelar {
+        font-size: 175%;
+        font-weight: bold;
+    }
+
+    #menubtn {
+        border-color: aqua;
+        font-size: 250%;
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        align-items: center;
+        padding: 0.1em 0.25em;
+
+    }
+
+    #navmenu ul li a {
+        font-size: 150%;
+    }
+
+    #lil {
+        font-family: "Chakra Petch", sans-serif;
+        color: white;
+        font-size: 200%;
+        font-weight: 150;
+    }
+
+    #mainlogo {
+        display: flex;
+        height: 20%;
+        width: 20%;
+        align-items: center;
+        border-radius: 5px;
+    }
+}

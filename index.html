@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celest Academy Home</title>
+
+     <!-- Icons-->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/carrusel.css">
+    <link rel="stylesheet" href="CSS/logoicon.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/index.css"> 
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="icon" href="images/logos/IMG_1306.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/why.css">
+    <link rel="stylesheet" href="CSS/chatbot.css">
+    <link rel="stylesheet" href="CSS/presentation.css">
+
+</head>
+<body>
+
+    <!-- header -->
+
+<section id="heading">
+    <header>
+        <div id="navbar">
+            <div id="logotit">
+                <img src="images/logos/IMG_1306.PNG" id="mainlogo" alt="Celest Academy Logo">
+                <h1 id="estelar">Celest Academy</h1>
+            </div>
+            
+            <button id="menubtn" aria-label="Toggle menu">☰</button>  
+        </div>
+        
+        <nav id="navmenu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Nosotros-M&V">Acerca de nosotros</a></li>
+                <li><a href="#Login">Login</a></li>
+                <li><a href="#Promociones">Promociones</a></li>
+                <li><a href="#Preguntas-y-Respuestas">Preguntas y Respuestas</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Overlay for menu background -->
+        <div class="menu-overlay"></div>
+    </header>
+</section>
+
+    <!-- welcome -->
+
+    <section id="Home">
+        <div id="carousel-container">
+            <div id="carousel-slides">
+                <!-- Aquí van las imágenes del carrusel -->
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/adf7e07b-ca5e-43ac-87e6-d4d09476660b.png" alt="Celest Academy Image 1">
+                    <div class="slide-caption">
+                        <h2>Bienvenido a Celest Academy</h2>
+                        <p>Educación de calidad para el futuro</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/students001.png" alt="Celest Academy Image 2">
+                    <div class="slide-caption">
+                        <h2>Aprende a tu ritmo</h2>
+                        <p>Cursos adaptados a tus necesidades</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/prormotionals/students002.png" alt="Celest Academy Image 3">
+                    <div class="slide-caption">
+                        <h2>Instructores expertos</h2>
+                        <p>Aprende con los mejores profesionales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navegación del carrusel -->
+            <button id="carousel-prev-btn" class="carousel-nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="carousel-next-btn" class="carousel-nav-btn"><i class="fas fa-chevron-right"></i></button>
+            
+            <!-- Contador de slides -->
+            <div id="carousel-counter">
+                <span id="current-slide">1</span>/<span id="total-slides">3</span>
+            </div>
+            
+            <!-- Indicadores de slides -->
+            <div id="carousel-indicators">
+                <button class="indicator-btn active" data-slide="0"></button>
+                <button class="indicator-btn" data-slide="1"></button>
+                <button class="indicator-btn" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Presentación Celest Academy -->
+    <section id="presentacion-celest">
+        <!-- Background container -->
+        <div class="background-celest-container">
+            <img class="background-celest" src="./images/prormotionals/hinh-anh-gif-thanh-pho-hien-dai-840x473.gif" alt="Fondo Celest Academy">
+        </div>
+        
+        <div id="contenedor-celest">
+            <!-- Título con efecto de neón -->
+            <h2 id="titulo-celest">¿Qué es Celest Academy?</h2>
+            
+            <!-- Contenido en tarjetas con efecto hover -->
+            <div class="celest-cards-container">
+                <div class="celest-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Redefinimos la enseñanza</h3>
+                    <p>En Celest Academy, redefinimos la enseñanza de idiomas. Somos una institución en línea que no solo ofrece clases de inglés, sino que también se prepara para llevarte al siguiente nivel con certificaciones.</p>
+                </div>
+                
+                <div class="celest-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Metodologías innovadoras</h3>
+                    <p>¡Nuestra misión es clara: brindarte una educación moderna, dinámica y accesible, impulsada por metodologías innovadoras como aprendizaje sincrónico, asincrónico, gamificación, aprendizaje basado en proyectos, microaprendizaje y práctica colaborativa!</p>
+                </div>
+                
+                <div class="celest-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Enfoque integral</h3>
+                    <p>Lo que hace único a Celest Academy es nuestro enfoque integral: contamos con material 100% original, grupos limitados a 30 estudiantes para maximizar la interacción, clases de muestra gratuitas y evaluaciones constantes.</p>
+                </div>
+            </div>
+            
+            <!-- Botón de llamada a la acción -->
+            <div class="celest-cta">
+                <a href="#contacto" class="celest-btn">¡Comienza tu aprendizaje hoy!</a>
+            </div>
+        </div>
+    </section>
+
+      <!-- Sección Por Qué Elegirnos -->
+      <section class="why-choose-section">
+        <!-- Background elements -->
+        <div class="why-choose-bg">
+            <div class="why-choose-circle"></div>
+            <div class="why-choose-lines"></div>
+        </div>
+    
+        <div class="contenedor">
+            <h2 class="titulo-seccion">¿Por Qué Elegir Celest Academy?</h2>
+            
+            <div class="why-choose-content">
+                <!-- Card 1 -->
+                <div class="why-choose-card">
+                    <div class="why-choose-icon-wrapper">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <h3 class="why-choose-title">Innovación Metodológica</h3>
+                    <p class="why-choose-description">Implementamos metodologías educativas de vanguardia que combinan la interacción en tiempo real con herramientas digitales adaptativas para optimizar tu aprendizaje.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="why-choose-card">
+                    <div class="why-choose-icon-wrapper">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <h3 class="why-choose-title">Comunidad Global</h3>
+                    <p class="why-choose-description">Forma parte de nuestra red internacional de estudiantes y profesores que comparten conocimientos, experiencias y oportunidades de práctica en un entorno colaborativo.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="why-choose-card">
+                    <div class="why-choose-icon-wrapper">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <h3 class="why-choose-title">Certificaciones Reconocidas</h3>
+                    <p class="why-choose-description">Obtén certificaciones con validez internacional que potencian tu currículum y abren puertas en el mercado laboral global, respaldadas por instituciones educativas de prestigio.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="why-choose-card">
+                    <div class="why-choose-icon-wrapper">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <h3 class="why-choose-title">Flexibilidad Horaria</h3>
+                    <p class="why-choose-description">Adapta tu aprendizaje a tu ritmo de vida con nuestro sistema flexible que te permite acceder a contenidos y participar en clases según tu disponibilidad y zona horaria.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Sección 3: Galería -->
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Nuestra Galería</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="images/prormotionals/0d3be72d-2eb8-43a0-ae7e-fdfc5e7d947e.png" alt="Clases de piano">
+                    <div class="gallery-item-info">
+                        <h4>Clases de Ingles</h4>
+                        <p>Aprende con los mejores maestros profesionales</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/gallary-11.jpg" alt="clases en lineas">
+                    <div class="gallery-item-info">
+                        <h4>Clases en vivo y en linea</h4>
+                        <p>Equipamiento profesional para grabar tus creaciones musicales</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/blog-4.jpg" alt="Libro">
+                    <div class="gallery-item-info">
+                        <h4>Libro Gratuito</h4>
+                        <p>Libro creado desde cero por nuestros insttuctores para nuestros</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/blog-2.jpg" alt="Ejercicios">
+                    <div class="gallery-item-info">
+                        <h4>ejercicios especializados</h4>
+                        <p>Ejercicios 100% especializados</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="images/gallary-2.jpg" alt="FAQS">
+                    <div class="gallery-item-info">
+                        <h4>preguntas resueltas</h4>
+                        <p> calidad garantizada al momento de dejar tus preguntas resueltas</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/gallary-10.jpg" alt="ejercicios">
+                    <div class="gallery-item-info">
+                        <h4>ejercicios diarios</h4>
+                        <p> ejercicios diarios hechos con cariño para nuestros estudiantes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+     <!-- contacto -->
+
+     <section id="contacto">
+        <!-- Elementos de fondo -->
+        <div class="contact-bg">
+            <div class="circle-glow"></div>
+            <div class="grid-overlay"></div>
+        </div>
+    
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Contáctanos</h2>
+            
+            <!-- Tarjetas de información de contacto -->
+            <div class="informacion-contacto">
+                <div class="detalle-contacto">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>celest01academy@gmail.com</p>
+                </div>
+                
+                <div class="detalle-contacto">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p>+52 (55)4008-1566</p>
+                </div>
+                
+                <div class="detalle-contacto">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horario de contacto</h3>
+                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+            </div>
+            
+            <!-- Formulario de contacto -->
+            <form id="formulario-contacto">
+                <div class="form-header">
+                    <h3>Envíanos un mensaje</h3>
+                    <p>Estamos aquí para responder tus preguntas</p>
+                </div>
+                
+                <div class="form-grid">
+                    <div class="campo-formulario">
+                        <label for="nombre">
+                            <i class="fas fa-user"></i> Nombre
+                        </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Correo Electrónico
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="telefono">
+                            <i class="fas fa-phone"></i> Teléfono
+                        </label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="asunto">
+                            <i class="fas fa-tag"></i> Asunto
+                        </label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto de tu mensaje" required>
+                    </div>
+                </div>
+                
+                <div class="campo-formulario mensaje-campo">
+                    <label for="mensaje">
+                        <i class="fas fa-comment"></i> Mensaje
+                    </label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn">
+                    <span>Enviar Mensaje</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                
+                <div id="respuesta" class="mensaje-respuesta"></div>
+            </form>
+        </div>
+    </section>
+
+
+
+<!-- Footer Section -->
+<footer>
+    <!-- Grid background effect -->
+    <div class="footer-bg"></div>
+    
+    <div class="container">
+        <div class="footer-content">
+            <!-- First Column: Logo and Social Links -->
+            <div class="footer-column">
+                <h1 id="estelar">Celest Academy</h1>
+                <p class="footer-about">"De la mano contigo, al siguiente nivel"</p>
+                
+                <div class="social-links">
+                    <a href="https://wa.me/525540081566" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Celest.Academy" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=celest01academy@gmail.com" target="_blank" title="Email">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://github.com/alejandro01espindolaa" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1u47HeSLmp2-FV6FMBCwO46eVJ_VtWFIF/view?usp=sharing" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <h2>Contacto de mis redes sociales</h2>
+            </div>
+            
+            <!-- Second Column: Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#navbar">Ir arriba ⇪</a></li>
+                    <li><a href="#Profile">Perfil</a></li>
+                    <li><a href="#Education">Educación</a></li>
+                    <li><a href="#my-resume">Trayectoria</a></li>
+                    <li><a href="#skills">Habilidades & Habilidades blandas</a></li>
+                    <li><a href="#why-me">¿Por qué Celest Academy?</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Third Column: Courses or Info -->
+            <div class="footer-column">
+                <h3 class="footer-title">Nuestros Cursos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Inglés Básico</a></li>
+                    <li><a href="#">Inglés Intermedio</a></li>
+                    <li><a href="#">Inglés Avanzado</a></li>
+                    <li><a href="#">Preparación TOEFL</a></li>
+                    <li><a href="#">Inglés de Negocios</a></li>
+                    <li><a href="#">Conversación</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados de este sitio pertenecen a Alejandro Espindola.</p>
+            <p>Diseñado, creado y codificado por Alejandro Espindola.</p>
+        </div>
+    </div>
+</footer>
+
+    
+                <!-- Botón flotante del chatbot -->
+                <div id="chat-button" class="chat-button">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <!-- Ventana del chatbot -->
+                <div id="chat-window" class="chat-window hidden">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <img src="/images/logos/IMG_1306.PNG" alt="Logo CA" class="chat-logo">
+                            <span>Asistente Celest Academy</span>
+                        </div>
+                        <div class="chat-controls">
+                            <button id="restart-chat" class="control-button restart-button" title="Reiniciar chat">
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                            <button id="minimize-chat" class="control-button minimize-button" title="Minimizar">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat-body" id="chat-body">
+                        <div class="message bot">
+                            <div class="message-content">
+                                <p>¡Hola! Soy el asistente virtual de Celest Academy. ¿Cômo te puedo ayudar?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+                        <button id="send-button" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+    
+
+
+
+    <script src="JS/index.js"></script>
+    <script src="JS/contact.js"></script>
+    <script src="JS/carrusel.js"></script>
+    <script src="JS/chatbot.js"></script>
+
+</body>
+</html>
