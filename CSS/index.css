@@ -11,7 +11,7 @@ body {
     padding-top: 1%;
     overflow-y: auto;
     background-color: black;
-    background-color: radial-gradient(circle, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0) 70%);
+    background-color: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgb(255, 255, 255) 70%);
 
 }
 
@@ -24,7 +24,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 3px solid transparent;
     background-clip: padding-box;
@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
+    background: linear-gradient(170deg, rgba(182, 182, 182, 0.1) 0%, rgba(0,255,255,0));
     padding: 0.5rem 1rem; /* REDUCIDO */
     border-style: double;
     border-width: 2px;
@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 /* BOTÓN MENU */
 #menubtn {
     color: rgb(255, 255, 255);
-    background: linear-gradient(170deg, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0));
+    background: linear-gradient(170deg, rgba(129, 129, 129, 0.1) 0%, rgba(53, 53, 53, 0));
     border-radius: 10px;
     border-width: 2px; /* REDUCIDO */
     border-style: double;
@@ -84,12 +84,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #menubtn:hover {
-    color: rgb(101, 255, 255);
-    background: linear-gradient(170deg, rgba(0, 255, 255, 0.226) 0%, rgba(0, 255, 255, 0.164));
-    border-color: rgb(101, 255, 255);
+    color: rgb(233, 233, 233);
+    background: linear-gradient(170deg, rgba(0, 0, 0, 0.226) 0%, rgba(156, 156, 156, 0.164));
+    border-color: rgb(126, 126, 126);
     border-style: double;
     transition: 0.5s;
-    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
 
 
 }
@@ -101,9 +101,9 @@ body::-webkit-scrollbar-thumb {
 
 
 #menubtn.active {
-    color: rgb(101, 255, 255);
+    color: rgb(211, 211, 211);
     transform: rotate(180deg);
-    border-color: rgb(60, 255, 255);
+    border-color: rgb(255, 255, 255);
 
 }
 
@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
     right: -250px; /* REDUCIDO */
     width: 250px;
     height: 100vh;
-    background: linear-gradient(135deg, rgb(0, 22, 22), #111111);
+    background: linear-gradient(135deg, rgb(17, 17, 17), #000000);
     padding-top: 80px;
     transition: 0.5s;
     z-index: 1000;
@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #navmenu ul li a:hover {
-    color: rgb(101, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 #navmenu ul li a::after {
@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     width: 0;
     height: 2px;
-    background: linear-gradient(to right, aqua, rgb(101, 255, 255));
+    background: linear-gradient(to right, rgb(150, 150, 150), rgb(29, 29, 29));
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -180,7 +180,7 @@ a {
 }
 
 a:hover {
-    color: #ffcc00;
+    color: #ffffff;
     transition: all 0.6s;
 }
 
@@ -208,7 +208,7 @@ h1 {
     }
 
     #menubtn {
-        border-color: aqua;
+        border-color: rgb(255, 255, 255);
         font-size: 250%;
         font-family: "Alumni Sans Pinstripe", sans-serif;
         align-items: center;
