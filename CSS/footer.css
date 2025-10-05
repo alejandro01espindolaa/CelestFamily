@@ -7,7 +7,9 @@
     --celest-gradient: linear-gradient(135deg, #f8f8f8, #313131);
     --celest-shadow: 0 4px 20px rgba(66, 66, 66, 0.4);
     --darklinear: linear-gradient(135deg, #2c2c2c, #000a0a);
-
+    /* New gray colors for footer buttons */
+    --footer-btn-gray: #808080;
+    --footer-btn-gray-hover: #a0a0a0;
 }
 
 footer {
@@ -94,7 +96,7 @@ footer {
     border-left: 2px solid var(--celest-primary);
 }
 
-/* Social links */
+/* Social links - UPDATED TO GRAY */
 .social-links {
     display: flex;
     gap: 15px;
@@ -108,14 +110,14 @@ footer {
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: rgba(0, 255, 255, 0.08);
-    color: var(--celest-primary);
+    background: rgba(128, 128, 128, 0.15); /* Gray background */
+    color: var(--footer-btn-gray); /* Gray color */
     border-radius: 50%;
     text-decoration: none;
     font-size: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
-    border: 1px solid rgba(61, 61, 61, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.3); /* Gray border */
     overflow: hidden;
 }
 
@@ -126,7 +128,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--celest-gradient);
+    background: linear-gradient(135deg, #a0a0a0, #606060); /* Gray gradient */
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 0;
@@ -134,8 +136,9 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(70, 70, 70, 0.3);
-    border-color: var(--celest-primary);
+    box-shadow: 0 5px 15px rgba(128, 128, 128, 0.4); /* Gray shadow */
+    border-color: var(--footer-btn-gray-hover);
+    color: var(--footer-btn-gray-hover);
 }
 
 .social-links a:hover::before {
