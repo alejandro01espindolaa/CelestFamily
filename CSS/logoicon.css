@@ -1,6 +1,6 @@
 /* Estilos generales para los botones de iconos sociales */
 #whatsapp-button, #github-button, #linkedin-button, #email-button, #file-button {
-    color: aqua;
+    color: rgb(211, 211, 211);
     padding: 10px;
     border-radius: 10%;
     font-size: 175%;
@@ -33,7 +33,7 @@
 
 /* Estilos al pasar el cursor sobre los botones */
 #email-button:hover, #github-button:hover, #file-button:hover, #whatsapp-button:hover, #linkedin-button:hover {
-    color: rgb(140, 247, 247);
+    color: rgb(119, 119, 119);
     transition: 0.6s;
     padding: 1%;
 }
@@ -44,7 +44,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background: linear-gradient(to right , rgb(156, 255, 255),aqua);
+    background: linear-gradient(to right , rgb(201, 201, 201),rgb(51, 51, 51));
     left: 0;
     bottom: 0;
     transition: width 0.5s;
@@ -55,7 +55,7 @@
 }
 
 #chat-button {
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 :root {

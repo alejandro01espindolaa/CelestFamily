@@ -1,12 +1,12 @@
 /* Footer - Celest Theme */
 :root {
-    --celest-primary: #00ffff; /* Color aqua */
-    --celest-dark: #121212;
+    --celest-primary: #fdfdfd; /* Color aqua */
+    --celest-dark: #181818;
     --celest-light: #ffffff;
-    --celest-accent: #9900ff; /* Color complementario para acentos */
-    --celest-gradient: linear-gradient(135deg, #00ffff, #9900ff);
-    --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
-    --darklinear: linear-gradient(135deg, #00292c, #000a0a);
+    --celest-accent: #9e9e9e; /* Color complementario para acentos */
+    --celest-gradient: linear-gradient(135deg, #f8f8f8, #313131);
+    --celest-shadow: 0 4px 20px rgba(66, 66, 66, 0.4);
+    --darklinear: linear-gradient(135deg, #2c2c2c, #000a0a);
 
 }
 
@@ -67,7 +67,7 @@ footer {
     color: transparent;
     font-weight: 700;
     letter-spacing: 1px;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    text-shadow: 0 0 5px rgba(37, 37, 37, 0.5);
     line-height: 1.1;
     animation: flicker 4s infinite alternate;
 }
@@ -75,8 +75,8 @@ footer {
 /* Glowing text effect animation */
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        text-shadow: 0 0 5px rgba(0, 255, 255, 0.5),
-                     0 0 15px rgba(0, 255, 255, 0.3);
+        text-shadow: 0 0 5px rgba(83, 83, 83, 0.5),
+                     0 0 15px rgba(44, 44, 44, 0.3);
     }
     20%, 24%, 55% {
         text-shadow: none;
@@ -115,7 +115,7 @@ footer {
     font-size: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
-    border: 1px solid rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(61, 61, 61, 0.2);
     overflow: hidden;
 }
 
@@ -134,7 +134,7 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(70, 70, 70, 0.3);
     border-color: var(--celest-primary);
 }
 
@@ -228,7 +228,7 @@ footer {
 /* Footer bottom section */
 .footer-bottom {
     padding-top: 20px;
-    border-top: 1px solid rgba(0, 255, 255, 0.1);
+    border-top: 1px solid rgba(61, 61, 61, 0.1);
     text-align: center;
     position: relative;
 }

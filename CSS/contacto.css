@@ -1,11 +1,11 @@
 :root {
-  --celest-primary: #00ffff; /* Color aqua */
-  --celest-primary-dim: rgba(0, 255, 255, 0.7); /* Versión más tenue */
+  --celest-primary: #eeeeee; /* Color aqua */
+  --celest-primary-dim: rgba(206, 206, 206, 0.7); /* Versión más tenue */
   --celest-dark: #080c14; /* Fondo oscuro */
   --celest-light: #ffffff;
-  --celest-accent: #9900ff; /* Color complementario para acentos */
-  --celest-gradient: linear-gradient(135deg, #00ffff, #9900ff);
-  --celest-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+  --celest-accent: #b6b6b6; /* Color complementario para acentos */
+  --celest-gradient: linear-gradient(135deg, #f1f1f1, #949494);
+  --celest-shadow: 0 4px 20px rgba(155, 155, 155, 0.4);
   --celest-form-bg: rgba(22, 28, 36, 0.8); /* Fondo del formulario */
   --celest-card-bg: rgba(22, 28, 36, 0.6); /* Fondo de las tarjetas */
   --darklinear: linear-gradient(135deg, #00292c, #000a0a);
@@ -43,7 +43,7 @@
   width: 70%;
   height: 70%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, rgba(0,255,255,0) 70%);
+  background: radial-gradient(circle, rgba(43, 43, 43, 0.1) 0%, rgba(0,255,255,0) 70%);
   filter: blur(60px);
   animation: glow-pulse 10s infinite alternate;
 }
@@ -115,7 +115,7 @@
   padding: 25px 20px;
   text-align: center;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(43, 43, 43, 0.1);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -125,7 +125,7 @@
 .detalle-contacto:hover {
   transform: translateY(-5px);
   border-color: var(--celest-primary);
-  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(168, 168, 168, 0.15);
 }
 
 .detalle-contacto::before {
@@ -194,7 +194,7 @@
   padding: 40px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(48, 48, 48, 0.1);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
@@ -256,7 +256,7 @@
 .campo-formulario textarea {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(61, 61, 61, 0.3);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.2);
   color: var(--celest-light);
@@ -269,7 +269,7 @@
 .campo-formulario textarea:focus {
   outline: none;
   border-color: var(--celest-primary);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.2);
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -326,13 +326,13 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(135deg, #9900ff, #00ffff);
+  background: linear-gradient(135deg, #e0e0e0, #838383);
   transition: width 0.5s ease;
   z-index: 0;
 }
 
 #submit-btn:hover {
-  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(63, 63, 63, 0.3);
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -357,9 +357,9 @@
 }
 
 .mensaje-respuesta.exito {
-  background: rgba(0, 255, 128, 0.1);
-  color: #00ff80;
-  border: 1px solid rgba(0, 255, 128, 0.3);
+  background: rgba(37, 37, 37, 0.1);
+  color: #999999;
+  border: 1px solid rgba(209, 209, 209, 0.3);
   display: block;
 }
 
